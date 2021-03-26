@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Angular App
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main" ng-app="myList" ng-controller="myListController">
+        <!-- Defining the module and controller in the body myList and myListController-->
+        <!-- we cant define the controller outside the module.. -->
+        <h1>Item's List</h1>
+        <div class="addItem">
+            <input placeholder="Add Item" class="addText" ng-model="newItemValue" />
+            <button ng-click="pushItem()">Add</button>
+        </div>
+        <ul>
+            <li ng-repeat="item in itemValues">{{item}}
+                <span ng-click="popItem($index)">X</span>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
