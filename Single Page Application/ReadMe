@@ -1,0 +1,5 @@
+Initially the array having the default values and that are show in the list using ui, li.
+Bind the value using ng-model.
+Input used to bind the value and the input value is sent ot controller and the value is pushed and value is bind in view in list.
+Push function is used to add the values in an array.
+Splice function is used to remove the value with the help of the index.
